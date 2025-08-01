@@ -51,13 +51,13 @@
                 navigator.clipboard.writeText(passwordBox.value).then(() => {
                     alert(' ✅ Password Copied! ');
 
-                    msgDiv.innerHTML = "  ✅ Password Copied!  ";
+                    msgDiv.innerHTML = ` ✅ Password Copied! ${passwordBox.value} `;
                 
                     msgDiv.style.display = 'block';
                         passwordBox.value = "";
                         setTimeout(()=>{
                             msgDiv.style.display = "none";
-                        },2000)
+                        },5000)
 
                 }).catch(() => {
                     alert(" ❌ Failed to Copy.. ")
