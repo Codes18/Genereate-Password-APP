@@ -32,23 +32,6 @@
             
         }
 
-
-       
-
-        function clearbtn() {
-
-            if(passwordBox.value.trim() === ""){
-                alert(" ⚠️ Please Generate Password first !")
-                 passwordBox.value= "";
-            }else{
-            alert(" 🗑️ Are you sure you want to clear the current password? ")
-            passwordBox.value = "";
-
-            }
-        }
-
-
-
         Copys.addEventListener('click', () => {
 
             const currenPwd = passwordBox.value.trim();
@@ -82,6 +65,22 @@
 
             }
         })
+
+
+
+        
+        function clearbtn() {
+
+            if(passwordBox.value.trim() === ""){
+                alert(" ⚠️ Please Generate Password first !")
+                 passwordBox.value= "";
+            }else{
+            alert(" 🗑️ Are you sure you want to clear the current password? ")
+            passwordBox.value = "";
+
+            }
+        }
+
 
 
 
